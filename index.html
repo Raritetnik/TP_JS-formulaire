@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="commande">
+        <header class="entete">
+            <h1>Achat de billet d'autobus</h1>
+            <div class="caroussel">
+                <img src="#" alt="">
+                <small></small>
+                <img src="#" alt="">
+                <small></small>
+                <img src="#" alt="">
+            </div>
+        </header>
+        <div class="info-personnel">
+            <form action="" class="">
+                <h3>Étape 1 - Informations personnelles</h3>
+                <div class="">
+                    <p>Nom complet <small>*Obligatoire</small></p>
+                    <input type="text" name="nom_complet">
+                </div>
+                <div class="">
+                    <p>Courriel <small>*Obligatoire</small></p>
+                    <input type="text" name="courriel">
+                </div>
+                <div class="">
+                    <p>Numéro de téléphone <small>*Obligatoire</small></p>
+                    <input type="text" name="numero_telephone">
+                </div>
+
+                <button><a href="">Continuer</a></button>
+            </form>
+        </div>
+
+        <div>
+            <form action="" class="">
+                <h3>Étape 2 - Informations sur la destination</h3>
+                <div class="inscription-date">
+                    <label>
+                        <p>Date de départ</p>
+                        <input type="text" name="date_debut">
+                        <input type="checkbox" name="avecRetour">Aller-retour
+                    </label>
+                    <label>
+                        <p>Date de retour</p>
+                        <input type="text" name="date_fin">
+                    </label>
+                </div>
+                <div>
+                    <p>Destination</p>
+                    <select name="destination">
+                        <option value="qc">Quebec</option>
+                        <option value="sh">Sherbrooke</option>
+                        <option value="mtr">Montréal</option>
+                    </select>
+                </div>
+
+                <div class="actions">
+                    <a href="">Retour</a>
+                    <button><a href="">Continuer</a></button>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <form action="" class="">
+                <h3>Étape 3 - Informations sur le billet</h3>
+                <label>
+                    <p>Nombre de billets</p>
+                    <input type="number" name="quantite_billet">
+                </label>
+                <label class="billet">
+                    <p>Billet #1</p>
+                    <div>
+                        <span><input type="radio" name="type">Tarif régulier</span>
+                        <span><input type="radio" name="type">Tarif étudiant</span>
+                        <span><input type="radio" name="type">Tarif sénior</span>
+                        <span><input type="radio" name="type">Tarif membre élite</span>
+                    </div>
+                </label>
+                <div class="actions">
+                    <a href="">Retour</a>
+                    <button><a href="">Continuer</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

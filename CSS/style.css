@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.commande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.entete h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 35px;
+}
+
+.caroussel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.caroussel img{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, .1);
+    border: 1px white solid;
+}
+
+.caroussel small {
+    height: 1.5px;
+    width: 120px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.active {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+/* ========================== */
+.commande>div>:is(div, input, form) {
+    display: flex;
+    flex-direction: column;
+}
+
+.commande>div form {
+    gap: 40px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: -1px 3px 2px rgba(0, 0, 0, .3);
+
+    min-width: 600px;
+    background-color: rgba(0, 0, 0, .1);
+}
+.commande small {
+    font-size: 12px;
+}
+
+.commande :is(input,select,option) {
+    padding: 7px;
+    border: 0px solid white;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.actions>a {
+    text-decoration: underline;
+}
+
+.billet div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.choix-type>* {
+    flex-grow: 1;
+}
+
+.info-personnel input {
+    width: 96%;
+}
+
+.destination {
+
+}
+
+.inscription-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inscription-date input[type=checkbox]{
+    margin: 0 15px;
+    transform: scale(1.5);
+}
+
+.commande input[type=radio]{
+    margin: 10px 15px;
+    transform: scale(1.5);
+}
+
+.commande button {
+    min-width: 200px;
+    padding: 10px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, .3);
+
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px white solid;
+    box-shadow: -1px 3px 2px rgba(0, 0, 0, .3);
+}
+
+
+
+
+
+
+
+/********************************************* */
+
+.invisible {
+    display: none;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}

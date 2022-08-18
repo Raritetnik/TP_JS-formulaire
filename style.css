@@ -1,0 +1,163 @@
+/*bleu: #0b325d
+bleu pale: #0b528d
+bleu fonce: #0b3f6a
+
+taille petite: 13px
+taille courante: 14px
+taille grande: 16px
+taille très grande: 19px
+police (Google Fonts): ‘Inter’, sans-serif
+interlignage: 1.5625em
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* Background de la page avec article
+avec des configuration par défault */
+html {
+    background-color: #0b3f6a;
+    line-height: 1.5625em;
+    font-family: 'Inter', sans-serif;
+    color:  #0b3f6a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Ajustements global de la publication */
+.publication {
+    background-color: white;
+    color:  #0b3f6a;
+    max-width: 600px;
+    font-size: 16px;
+
+    border: 1px solid white;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    /* Espacements pour visibilité */
+    margin: 20px;
+}
+/* Ajustement visuel */
+.publication>div {
+    padding: 0 30px;
+}
+
+/* Ajustements du texte contenu */
+.publication p {
+    font-weight: 500;
+    text-align: justify;
+}
+
+/* Ajustements global du texte titre de la publication */
+.publication h3 {
+    font-size: 19px;
+}
+
+/* Modification dans le header */
+.publication>header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+/* Ajustements global de la publication */
+.publication span {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Ajustements global de la publication */
+.publication small {
+    font-size: 16px;
+}
+
+/* Ajustements global de la publication */
+.publication>header div{
+    flex-grow: 1;
+}
+
+/* Icon de profil */
+.medaillon {
+    height: 60px;
+    width: 60px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ============== Pied de page =========== */
+/* Positionnement des boutons reactions */
+.reaction {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    border-top: 1px solid rgb(0, 0, 0,0.1);
+}
+
+/* Les boutons responsives d'action */
+.reaction>a {
+    color:  #0b3f6a;
+    display: flex;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Texte style */
+.reaction>a small {
+    font-size: 14px;
+}
+
+/* Ajustement des icones de boutons */
+.reaction>a img{
+    padding-right: 10px;
+}
+
+/* Espace de commentaire au pied de la publication */
+.publication>footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+    margin: 0;
+    border-top: 1px solid rgb(0, 0, 0,0.1);
+}
+
+/* Modification de l'espace pour le texte */
+.publication>footer input {
+    flex-grow: 1;
+    padding: 20px;
+    font-size: 19x;
+    border-radius: 30px;
+    border: 0px solid white;
+    color: black;
+
+    background-color: rgb(236, 236, 236);
+}
+
+/* Texte d'aide ajustement */
+.publication>footer input::placeholder {
+    color: black;
+    font-size: 19x;
+    opacity: 0.8;
+}
+
+/* Image presentatif ajustement */
+.publication>picture img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+
+    /* Place image at 0 position inside the cover*/
+    object-position: 0px 0.1px;
+}
