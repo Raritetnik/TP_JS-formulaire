@@ -96,8 +96,8 @@ a {
     flex-grow: 1;
 }
 
-.info-personnel input {
-    width: 96%;
+.form_profil input {
+    width: 100%;
 }
 
 .destination {
@@ -107,6 +107,7 @@ a {
 .inscription-date {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -120,7 +121,7 @@ a {
     transform: scale(1.5);
 }
 
-.commande button {
+.commande input[type=button] {
     min-width: 200px;
     padding: 10px;
     align-self: flex-end;

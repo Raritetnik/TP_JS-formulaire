@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="JS/script.js"></script>
     <link rel="stylesheet" href="CSS/style.css">
     <title>Formulaire</title>
 </head>
@@ -20,7 +19,8 @@
                 <img src="#" alt="">
             </div>
         </header>
-        <div class="info-personnel">
+
+        <div class="form_profil">
             <form action="" class="">
                 <h3>Étape 1 - Informations personnelles</h3>
                 <div class="">
@@ -35,23 +35,22 @@
                     <p>Numéro de téléphone <small>*Obligatoire</small></p>
                     <input type="text" name="numero_telephone">
                 </div>
-
-                <button><a href="">Continuer</a></button>
+                <input type="button" class="continue" value="Continuer">
             </form>
         </div>
 
-        <div>
+        <div class="form_contenu">
             <form action="" class="">
                 <h3>Étape 2 - Informations sur la destination</h3>
                 <div class="inscription-date">
                     <label>
                         <p>Date de départ</p>
-                        <input type="text" name="date_debut">
-                        <input type="checkbox" name="avecRetour">Aller-retour
+                        <input type="date" name="date_debut">
                     </label>
+                    <label><input type="checkbox" name="avecRetour">Aller-retour</label>
                     <label>
                         <p>Date de retour</p>
-                        <input type="text" name="date_fin">
+                        <input type="date" name="date_fin">
                     </label>
                 </div>
                 <div>
@@ -64,34 +63,37 @@
                 </div>
 
                 <div class="actions">
-                    <a href="">Retour</a>
-                    <button><a href="">Continuer</a></button>
+                    <input type="button" class="retour" value="Retour">
+                    <input type="button" class="continue" value="Continue">
                 </div>
             </form>
         </div>
 
-        <div>
+        <div class="form_billet">
             <form action="" class="">
                 <h3>Étape 3 - Informations sur le billet</h3>
                 <label>
                     <p>Nombre de billets</p>
                     <input type="number" name="quantite_billet">
                 </label>
-                <label class="billet">
-                    <p>Billet #1</p>
-                    <div>
-                        <span><input type="radio" name="type">Tarif régulier</span>
-                        <span><input type="radio" name="type">Tarif étudiant</span>
-                        <span><input type="radio" name="type">Tarif sénior</span>
-                        <span><input type="radio" name="type">Tarif membre élite</span>
+                <div class="table-billets">
+                    <div class="billet">
+                        <p>Billet #1</p>
+                        <div>
+                            <span><input type="radio" name="billet-1">Tarif régulier</span>
+                            <span><input type="radio" name="billet-1">Tarif étudiant</span>
+                            <span><input type="radio" name="billet-1">Tarif sénior</span>
+                            <span><input type="radio" name="billet-1">Tarif membre élite</span>
+                        </div>
                     </div>
-                </label>
+                </div>
                 <div class="actions">
-                    <a href="">Retour</a>
-                    <button><a href="">Continuer</a></button>
+                    <input type="button" class="retour" value="Retour">
+                    <input type="button" class="continue" value="Continuer">
                 </div>
             </form>
         </div>
     </div>
+    <script src="JS/script.js"></script>
 </body>
 </html>
