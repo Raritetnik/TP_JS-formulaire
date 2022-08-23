@@ -74,7 +74,7 @@
                 <h3>Étape 3 - Informations sur le billet</h3>
                 <label>
                     <p>Nombre de billets</p>
-                    <input type="number" name="quantite_billet">
+                    <input type="number" name="quantite_billet" min="1" max="10" value="1">
                 </label>
                 <div class="table-billets">
                     <div class="billet">
@@ -93,7 +93,64 @@
                 </div>
             </form>
         </div>
+
+        <div class="resume">
+            <h1>Étape 4 - Résumé</h1>
+            <section>
+                <h3>Information personnelles</h3>
+                <p id="res_nomComplet">Nom:</p>
+                <p id="res_courriel">Courriel: </p>
+                <p id="res_phone">Téléphone: </p>
+            </section>
+            <section>
+                <h3>Destination</h3>
+                <p id="res_ville"></p>
+                <div>
+                    <span>
+                        <p>Aller</p>
+                        <p id="res_dateDepart">0000.00.00</p>
+                    </span>
+                    <span>
+                        <p>Retour</p>
+                        <p id="res_dateFin">0000.00.00</p>
+                    </span>
+                </div>
+            </section>
+            <section>
+                <h3>Billets</h3>
+                <div id="res_listeBillet">
+                    <span>
+                        <p>Billet regulier</p>
+                        <p>3</p>
+                    </span>
+                </div>
+            </section>
+            <section>
+                <span>
+                    <p>Sous-total</p>
+                    <p id="res_sousTotal">0$</p>
+                </span>
+                <span>
+                    <p>TPS (5%)</p>
+                    <p id="res_tps">0$</p>
+                </span>
+                <span>
+                    <p>TPQ (9.975%)</p>
+                    <p id="res_tpq">0$</p>
+                </span>
+                <span>
+                    <p>Total</p>
+                    <p id="res_total">0$</p>
+                </span>
+            </section>
+
+            <div class="actions">
+                <input type="button" class="retour" value="Modifier la commande">
+                <input type="button" class="continue" value="Procéder au paiement">
+            </div>
+        </div>
     </div>
+    <script src="JS/Objects.js"></script>
     <script src="JS/script.js"></script>
 </body>
 </html>
