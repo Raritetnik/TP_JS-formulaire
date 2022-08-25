@@ -33,7 +33,7 @@
                 </div>
                 <div class="">
                     <p>Numéro de téléphone <small>*Obligatoire</small></p>
-                    <input type="text" name="numero_telephone">
+                    <input type="text" name="phone">
                 </div>
                 <input type="button" class="continue" value="Continuer">
             </form>
@@ -56,9 +56,9 @@
                 <div>
                     <p>Destination</p>
                     <select name="destination">
-                        <option value="qc">Quebec</option>
-                        <option value="sh">Sherbrooke</option>
-                        <option value="mtr">Montréal</option>
+                        <option value="1">Quebec</option>
+                        <option value="2">Sherbrooke</option>
+                        <option value="3">Montréal</option>
                     </select>
                 </div>
 
@@ -74,7 +74,7 @@
                 <h3>Étape 3 - Informations sur le billet</h3>
                 <label>
                     <p>Nombre de billets</p>
-                    <input type="number" name="quantite_billet" min="1" max="10" value="1">
+                    <input type="number" placeholder="1" name="quantite_billet" min="1" max="10" value="1">
                 </label>
                 <div class="table-billets">
                     <div class="billet">
@@ -98,20 +98,34 @@
             <h1>Étape 4 - Résumé</h1>
             <section>
                 <h3>Information personnelles</h3>
-                <p id="res_nomComplet">Nom:</p>
-                <p id="res_courriel">Courriel: </p>
-                <p id="res_phone">Téléphone: </p>
+                <div>
+                    <span>
+                        <p>Nom:</p>
+                        <p id="res_nomComplet"></p>
+                    </span>
+                    <span>
+                        <p>Courriel:</p>
+                        <p id="res_courriel">Courriel: </p>
+                    </span>
+                    <span>
+                        <p>Téléphone:</p>
+                        <p id="res_phone">Téléphone: </p>
+                    </span>
+                </div>
             </section>
             <section>
                 <h3>Destination</h3>
-                <p id="res_ville"></p>
                 <div>
                     <span>
-                        <p>Aller</p>
+                        <p>Ville:</p>
+                        <p id="res_ville"></p>
+                    </span>
+                    <span>
+                        <p>Aller:</p>
                         <p id="res_dateDepart">0000.00.00</p>
                     </span>
                     <span>
-                        <p>Retour</p>
+                        <p>Retour:</p>
                         <p id="res_dateFin">0000.00.00</p>
                     </span>
                 </div>
@@ -150,7 +164,7 @@
             </div>
         </div>
     </div>
-    <script src="JS/Objects.js"></script>
+    <script src="JS/Formulaire.js"></script>
     <script src="JS/script.js"></script>
 </body>
 </html>

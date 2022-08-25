@@ -41,6 +41,9 @@ const e_tableBillets = document.querySelector(".table-billets");
 function finalisationDeFormulaire() {
 
 }
+/**
+ * Vérification de date retour, si checkbox est coché
+ */
 
 /**
  * Formulaire de formulaire -- Actions
@@ -68,6 +71,7 @@ e__formContenu.querySelector('.retour').addEventListener("click", function() {
 e__formBillet.querySelector('.continue').addEventListener("click", function() {
     e__formBillet.classList.add('invisible');
     e__resume.classList.remove('invisible');
+    sommaireDeFormulaire();
 });
 e__formBillet.querySelector('.retour').addEventListener("click", function() {
     e__formBillet.classList.add('invisible');
@@ -75,7 +79,7 @@ e__formBillet.querySelector('.retour').addEventListener("click", function() {
 });
 
 /**
- * Formulaire de billet -- Actions
+ * Formulaire de resume -- Actions
  */
  e__resume.querySelector('.continue').addEventListener("click", function() {
     e__resume.classList.add('invisible');
